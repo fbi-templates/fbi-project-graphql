@@ -1,0 +1,14 @@
+{
+  "apps": [{
+    "name": "app-prod",
+    "cwd": "./",
+    "script": "index.js",
+    "watch": false,
+    "autorestart": true,
+    "merge_logs": true,
+    "log": "./logs/pm2.log",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}

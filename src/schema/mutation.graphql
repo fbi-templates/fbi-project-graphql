@@ -1,0 +1,5 @@
+type Mutation {
+  createDraft(title: String!, content: String!, authorEmail: String!): Post!
+  deletePost(id: ID!): Post
+  publish(id: ID!): Post
+}

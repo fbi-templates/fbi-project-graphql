@@ -1,0 +1,11 @@
+{
+  "extends": "tslint-config-standard",
+  "rules": {
+    "space-before-function-paren": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "src/generated/**"
+    ]
+  }
+}

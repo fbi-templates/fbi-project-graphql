@@ -1,7 +1,7 @@
 const { parse } = require('graphql')
 const { generateCode } = require('graphqlgen')
 const { parseModels } = require('graphqlgen/dist/parse')
-const { relative, dirname, basename, join } = require('path')
+const { relative, dirname, basename, join, sep } = require('path')
 const { fs, path, style } = ctx.utils
 const schemaImporter = require('./schema-importer')
 
@@ -41,7 +41,7 @@ async function writeResolvers (resolvers, config, typesFilepath) {
           relative(
             dirname(filepath),
             join(dirname(typesFilepath), basename(typesFilepath, '.ts'))
-          )
+          ).replace(new RegExp('\\' + sep, 'g'), '/')
         )
       )
     })

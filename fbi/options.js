@@ -18,7 +18,7 @@ module.exports = {
       typePrefix: '',
       smartTResult: false,
       smartTParent: false,
-      // strictNulls: true,
+      strictNulls: true,
       asyncResult: false,
       requireResolverTypes: false
     }

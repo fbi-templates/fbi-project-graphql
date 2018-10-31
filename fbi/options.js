@@ -12,15 +12,6 @@ module.exports = {
       semi: false,
       singleQuote: true,
       trailingComma: 'none'
-    },
-    schemaTypesOptions: {
-      global: false,
-      typePrefix: '',
-      smartTResult: false,
-      smartTParent: false,
-      strictNulls: true,
-      asyncResult: false,
-      requireResolverTypes: false
     }
   },
 

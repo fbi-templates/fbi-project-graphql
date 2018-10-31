@@ -1,5 +1,6 @@
 type Query {
   feed: [Post!]!
   drafts: [Post!]!
+  users: [User]
   post(id: ID!): Post
 }

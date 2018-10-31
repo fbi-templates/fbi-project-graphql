@@ -1,6 +1,12 @@
+enum GenderEnum {
+  male
+  female
+}
+
 type User {
   id: ID!
   email: String!
   name: String!
+  gender: GenderEnum!
   posts: [Post!]!
 }

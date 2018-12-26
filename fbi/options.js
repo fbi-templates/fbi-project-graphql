@@ -20,7 +20,7 @@ module.exports = {
     verbose: true,
     ignore: ['node_modules', 'test', 'fbi', '.git'],
     watch: ['src/**/*.ts', 'src/**/*.graphql'],
-    inspect: true
+    inspect: false
   },
 
   build: {
